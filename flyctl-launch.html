@@ -3486,6 +3486,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
 </head>
 <body class="tc-body">
 
+<h1>launch.go source</h1>
+
 <section class="tc-story-river tc-static-story-river">
 <a name="fly launch code">
 <div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists " data-tags="" data-tiddler-title="fly launch code" role="article">
@@ -3502,17 +3504,13 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
             
                 
-    <div class=" tc-eventcatcher">
-    <div class=" tc-eventcatcher">
         <div class="can-omni-stream annot">
             
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728192115187-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728192115189" data-currenttid="20220728192115187-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728192115189" data-currenttid="20220728192115187-1">
 	
     </div>
                             </div>
@@ -3554,10 +3552,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728192138587-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728192138588" data-currenttid="20220728192138587-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728192138588" data-currenttid="20220728192138587-1">
 	<p>Construct the launch command using the flags and options the user includes.</p>
     </div>
                             </div>
@@ -3629,10 +3625,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728192150936-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728192150937" data-currenttid="20220728192150936-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728192150937" data-currenttid="20220728192150936-1">
 	
     </div>
                             </div>
@@ -3658,10 +3652,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728192200670-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728192200671" data-currenttid="20220728192200670-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728192200671" data-currenttid="20220728192200670-1">
 	<p>Make sure the org has a remote builder, unless there's a Docker daemon running locally? I think deploy currently defaults to remote-only at the moment, regardless, unless you use the <code>--local-only</code> flag on <code>fly deploy</code>!</p>
     </div>
                             </div>
@@ -3682,10 +3674,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728192207203-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728192207204" data-currenttid="20220728192207203-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728192207204" data-currenttid="20220728192207203-1">
 	<p>Initialize a fresh struct to hold app config as it gets determined.</p>
     </div>
                             </div>
@@ -3701,10 +3691,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728192510652-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728192510654" data-currenttid="20220728192510652-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728192510654" data-currenttid="20220728192510652-1">
 	<p>If a <code>fly.toml</code> file is detected at in the working directory (or in a dir specified using the <code>path</code> flag), read that into a var called <code>cfg</code> (in Go, <code>:=</code> is declaration and assignment combined).</p><p>If we do find a <code>fly.toml</code>, we have to distinguish between possible desired actions:</p><ul><li>deploy the app specified in fly.toml</li><li>use the fly.toml to configure a new app</li></ul>
     </div>
                             </div>
@@ -3726,10 +3714,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728203846176-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728203846179" data-currenttid="20220728203846176-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728203846179" data-currenttid="20220728203846176-1">
 	<p>If there's an app name in <code>fly.toml</code>, use <code>shouldDeployExistingApp()</code> (defined later in this file) to decide what to do.</p><p>Let the user know that a <code>fly.toml</code> was found, one way or the other.</p>
     </div>
                             </div>
@@ -3754,10 +3740,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728203846176-2">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728203846180" data-currenttid="20220728203846176-2">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728203846180" data-currenttid="20220728203846176-2">
 	<p>If <code>shouldDeployExistingApp()</code> returns <code>true</code>, we go ahead now and deploy the app of that name, with no configuration changes. <strong>THE END</strong></p>
     </div>
                             </div>
@@ -3775,10 +3759,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728201527129-2">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728201527131" data-currenttid="20220728201527129-2">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728201527131" data-currenttid="20220728201527129-2">
 	
     </div>
                             </div>
@@ -3792,10 +3774,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728204901211-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728204901214" data-currenttid="20220728204901211-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728204901214" data-currenttid="20220728204901211-1">
 	<p>If we're here, there was a <code>fly.toml</code>, but either it didn't have an app name in it, or <code>shouldDeployExistingApp()</code> returned <code>false</code>. </p><p>If the <code>copy-config</code> flag was used, or the user confirms they'd like to use the config in that <code>fly.toml</code>, copy the config from that <code>fly.toml</code> into the <code>.definition</code> property(?) of our initialised <code>appConfig</code>.</p>
     </div>
                             </div>
@@ -3815,10 +3795,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728205420241-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728205420243" data-currenttid="20220728205420241-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728205420243" data-currenttid="20220728205420241-1">
 	<p>If we're here, we're not deploying an existing app, and we're going to look for source code in <code>dir</code>, as well as deposit a <code>fly.toml</code> there. (<span class="tc-inline-style" style="color:red;">if we asked to use config for an existing <code>fly.toml</code>, do we still write a new <code>fly.toml</code>? my experiments suggest we do at least alter it</span>)</p>
     </div>
                             </div>
@@ -3834,10 +3812,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728205427311-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728205427312" data-currenttid="20220728205427311-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728205427312" data-currenttid="20220728205427311-1">
 	<p><code>srcInfo</code> is a struct that the scanner (<code>scanners/whatever.go</code>) will fill in with config later, if we reach the point where the scanners run.</p><h3 class="">Build possibilities</h3><p>This next bit corresponds to the <a class="tc-tiddlylink-external" href="https://fly.io/docs/reference/configuration" rel="noopener noreferrer" target="_blank">[build]</a> section in <code>fly.toml</code>.</p><p>There are three initial possibilities for the build: use a specified image, use an existing Dockerfile, or ask the launch scanners to decide what to do.</p>
     </div>
                             </div>
@@ -3853,10 +3829,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728205651058-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728205651059" data-currenttid="20220728205651058-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728205651059" data-currenttid="20220728205651058-1">
 	<p>If the <code>image</code> flag was used, we're not going to build an image, but use a pre-existing one. Store that in our config.</p><p>Ampersands mean pointer references. Is <code>&amp;flyctl.Build</code> pointing to something called Build in a v base file in flyctl?</p>
     </div>
                             </div>
@@ -3875,10 +3849,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728210450938-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728210450940" data-currenttid="20220728210450938-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728210450940" data-currenttid="20220728210450938-1">
 	<p>If the <code>dockerfile</code> flag was used, configure build to use the indicated Dockerfile. Store that info in the config.</p>
     </div>
                             </div>
@@ -3897,10 +3869,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728214254536-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728214254539" data-currenttid="20220728214254536-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728214254539" data-currenttid="20220728214254536-1">
 	<p>Otherwise, we're going to start running through the scanners in the <code>/scanner/</code> directory, in the order listed within <code>/scanner/scanner.go</code>. </p><p>Each scanner looks in the <code>dir</code> directory for signs that this app is a match for it, and if it matches, the scanner generates a struct full of config fields that we copy into <code>srcInfo</code>.</p>
     </div>
                             </div>
@@ -3923,10 +3893,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728214543353-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728214543355" data-currenttid="20220728214543353-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728214543355" data-currenttid="20220728214543353-1">
 	<p>If we're here, the scanners have run and none of them matched.</p>
     </div>
                             </div>
@@ -3942,10 +3910,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728214701669-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728214701671" data-currenttid="20220728214701669-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728214701671" data-currenttid="20220728214701669-1">
 	<p>Else, carry on with the config as indicated by the scanner.</p>
     </div>
                             </div>
@@ -3961,10 +3927,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728214843054-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728214843056" data-currenttid="20220728214843054-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728214843056" data-currenttid="20220728214843054-1">
 	<p>(just choosing between "a" and "an" to put in the next printed message)</p>
     </div>
                             </div>
@@ -3991,10 +3955,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728214930954-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728214930956" data-currenttid="20220728214930954-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728214930956" data-currenttid="20220728214930954-1">
 	<p>Communicate what kind of app the scanner thinks it found and what kind of build it's going to use as a result.</p><p>If there's a <code>Builder</code> field in <code>srcInfo</code>, that means we plan to use a buildpack or (<span class="tc-inline-style" style="color:lightcoral;">what other kinds of Builders might we have?</span>). And the <code>Buildpacks</code> field specifies which buildpack, if the <code>Builder</code> is a buildpacks builder. </p>
     </div>
                             </div>
@@ -4017,10 +3979,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729131416140-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729131416142" data-currenttid="20220729131416140-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729131416142" data-currenttid="20220729131416140-1">
 	<p>Here's how the <code>Build</code> field in <code>appConfig</code> gets set if the scanner decides to use a <code>Builder</code>. </p><p><span class="tc-inline-style" style="color:lightcoral;">I'm not sure why this happens right here in that case, because I think some scanners will define this later.</span></p>
     </div>
                             </div>
@@ -4042,10 +4002,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729133129357-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729133129359" data-currenttid="20220729133129357-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729133129359" data-currenttid="20220729133129357-1">
 	
     </div>
                             </div>
@@ -4060,10 +4018,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729133247761-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729133247762" data-currenttid="20220729133247761-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729133247762" data-currenttid="20220729133247761-1">
 	<p>This loop will copy any files the scanner indicated (which it will have found in <code>/scanner/templates/</code>) into our local directory <code>dir</code> (with any subdirs the scanner indicates). Might be a Dockerfile, might be other config files etc.</p>
     </div>
                             </div>
@@ -4080,10 +4036,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729133339921-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729133339922" data-currenttid="20220729133339921-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729133339922" data-currenttid="20220729133339921-1">
 	<p>(Overwrites files only with confirmation)</p>
     </div>
                             </div>
@@ -4107,10 +4061,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729133339921-2">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729133339923" data-currenttid="20220729133339921-2">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729133339923" data-currenttid="20220729133339921-2">
 	<p>If it's a Bash script, make it executable</p>
     </div>
                             </div>
@@ -4132,10 +4084,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729135508102-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729135508105" data-currenttid="20220729135508102-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729135508105" data-currenttid="20220729135508102-1">
 	
     </div>
                             </div>
@@ -4151,10 +4101,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729135609012-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729135609013" data-currenttid="20220729135609012-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729135609013" data-currenttid="20220729135609012-1">
 	
     </div>
                             </div>
@@ -4170,10 +4118,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729135754966-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729135754969" data-currenttid="20220729135754966-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729135754969" data-currenttid="20220729135754966-1">
 	<p>Naming the app, if user hasn't used the <code>generate-name</code> flag. If they used the <code>name</code> flag, use that name. If not, prompt for a name.</p>
     </div>
                             </div>
@@ -4204,10 +4150,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729135847379-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729135847381" data-currenttid="20220729135847379-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729135847381" data-currenttid="20220729135847379-1">
 	<p>Select organization – if there's only Personal, that'll be used.</p>
     </div>
                             </div>
@@ -4226,10 +4170,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729135901528-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729135901529" data-currenttid="20220729135901528-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729135901529" data-currenttid="20220729135901528-1">
 	
     </div>
                             </div>
@@ -4248,10 +4190,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729135936014-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729135936016" data-currenttid="20220729135936014-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729135936016" data-currenttid="20220729135936014-1">
 	<p>Get a region, either from a <code>region</code> flag or user selection.</p>
     </div>
                             </div>
@@ -4277,10 +4217,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729140041861-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729140041862" data-currenttid="20220729140041861-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729140041862" data-currenttid="20220729140041861-1">
 	<p>Use the API to create the app! </p>
     </div>
                             </div>
@@ -4298,10 +4236,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141138145-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141138147" data-currenttid="20220729141138145-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141138147" data-currenttid="20220729141138145-1">
 	<p>Give our <code>appConfig</code> a <code>Definition</code> field(?) using the definition that's been created for new app by <code>CreateApp()</code>. But only if we didn't use an existing <code>fly.toml</code>.</p><p>(so now we have <code>appConfig.Build</code> and <code>appConfig.Definition</code>)</p><p>The app so far has only <code>Name</code>, <code>OrganizationID</code>, and <code>PreferredRegion</code> set from here <span class="tc-inline-style" style="color:lightcoral;">(there may be default config set by <code>CreateApp()</code>)</span>. </p>
     </div>
                             </div>
@@ -4319,10 +4255,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141737873-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141737874" data-currenttid="20220729141737873-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141737874" data-currenttid="20220729141737873-1">
 	<p>The <code>app</code> is now a thing we can get properties? fields? from.</p><p>(oh! now we have <code>appConfig.Build</code>, <code>appConfig.Definition</code>, and <code>appConfig.AppName</code>)</p><p><span class="tc-inline-style" style="color:lightcoral;">Putting some stuff into <code>cmdCtx</code> fields (<code>cmdctx/cmdcontext.go</code>) here; and this is before functions are run to make use of a bunch of scanner output. I don't quite get it</span></p>
     </div>
                             </div>
@@ -4340,10 +4274,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141806456-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141806457" data-currenttid="20220729141806456-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141806457" data-currenttid="20220729141806456-1">
 	<h2 class="">Config changes that aren't <code>[build]</code> that will go in <code>fly.toml</code></h2><p>This next bunch of things write sections in <code>fly.toml</code> according to the scanner output, using <code>appConfig.Set*</code> functions: Port, Env, Statics, Volumes (<code>[mounts]</code>), Processes, ReleaseCmd, DockerCommand, DockerEntryPoint, KillSignal. </p>
     </div>
                             </div>
@@ -4362,10 +4294,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141811606-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141811608" data-currenttid="20220729141811606-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141811608" data-currenttid="20220729141811606-1">
 	
     </div>
                             </div>
@@ -4387,10 +4317,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141814873-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141814874" data-currenttid="20220729141814873-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141814874" data-currenttid="20220729141814873-1">
 	
     </div>
                             </div>
@@ -4408,10 +4336,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141820139-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141820140" data-currenttid="20220729141820139-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141820140" data-currenttid="20220729141820139-1">
 	<p>Create the <code>[mounts]</code> section</p>
     </div>
                             </div>
@@ -4429,10 +4355,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141823957-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141823957" data-currenttid="20220729141823957-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141823957" data-currenttid="20220729141823957-1">
 	
     </div>
                             </div>
@@ -4450,10 +4374,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141827973-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141827974" data-currenttid="20220729141827973-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141827974" data-currenttid="20220729141827973-1">
 	
     </div>
                             </div>
@@ -4471,10 +4393,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141831956-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141831957" data-currenttid="20220729141831956-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141831957" data-currenttid="20220729141831956-1">
 	
     </div>
                             </div>
@@ -4492,10 +4412,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141835439-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141835440" data-currenttid="20220729141835439-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141835440" data-currenttid="20220729141835439-1">
 	
     </div>
                             </div>
@@ -4513,10 +4431,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729141841055-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729141841056" data-currenttid="20220729141841055-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729141841056" data-currenttid="20220729141841055-1">
 	
     </div>
                             </div>
@@ -4535,10 +4451,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729142351354-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729142351355" data-currenttid="20220729142351354-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729142351355" data-currenttid="20220729142351354-1">
 	<p>Let the user know the app has been generated.</p>
     </div>
                             </div>
@@ -4554,10 +4468,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729142544089-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729142544091" data-currenttid="20220729142544089-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729142544091" data-currenttid="20220729142544089-1">
 	<h2 class="">More config from the scanner beyond <code>fly.toml</code></h2><h3 class="">Secrets</h3><p>Generate secrets if indicated by the launch scanner. </p><p>Each entry would have <code>Key</code>, <code>Help</code>, and <code>Generate</code> properties; <code>Generate</code> is used to decide whether to generate a random key and give the <code>Key</code> property that as a value. Use the API to set these as secrets. If the scanner indicates secrets are needed but hasn't set <code>Generate: true</code> on them, interactively set secrets.  Print message with the keys of secrets that have been set.</p>
     </div>
                             </div>
@@ -4616,10 +4528,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729142610786-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729142610788" data-currenttid="20220729142610786-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729142610788" data-currenttid="20220729142610786-1">
 	<h3 class="">Volumes</h3><p>Create volumes using API if scanner indicates. Print message to confirm volume created (with size)</p>
     </div>
                             </div>
@@ -4661,10 +4571,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729142702103-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729142702104" data-currenttid="20220729142702103-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729142702104" data-currenttid="20220729142702103-1">
 	<h3 class="">Local commands to run before deploying</h3><p>Run any <code>InitCommands</code> in <code>srcInfo</code> – these are things run on your local machine/the machine you're launching from, so depend on having the right kind of dev environment installed. A scanner/launcher could build and deploy an app with nothing but source code, but including an init command rules that out.</p>
     </div>
                             </div>
@@ -4687,10 +4595,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729142734852-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729142734853" data-currenttid="20220729142734852-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729142734853" data-currenttid="20220729142734852-1">
 	<h3 class="">Adding things to the Dockerfile</h3><p>Write any lines in <code>srcInfo.DockerfileAppendix</code> into the Dockerfile</p>
     </div>
                             </div>
@@ -4711,10 +4617,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729142836785-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729142836786" data-currenttid="20220729142836785-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729142836786" data-currenttid="20220729142836785-1">
 	<h2 class="">Oh look more <code>Build</code> stuff</h2><p>Add any <code>BuildArgs</code> to <code>appConfig.Build</code> – these build arguments will be used at build time <span class="tc-inline-style" style="color:lightcoral;">(duh, but that's where build-time arguments can be passed – is this the same as setting an environment variable before <code>fly deploy</code>? (like LOG_LEVEL=debug))</span></p>
     </div>
                             </div>
@@ -4733,10 +4637,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729143131285-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729143131286" data-currenttid="20220729143131285-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729143131286" data-currenttid="20220729143131285-1">
 	<h2 class="">Finalise <code>fly.toml</code></h2><p>Write everything from <code>appConfig</code> into <code>fly.toml</code>! :yay:</p><p><span class="tc-inline-style" style="color:lightcoral;">Must check <code>writeAppConfig()</code> because it seems to me here that we're overwriting <code>fly.toml</code> no matter what here.</span></p>
     </div>
                             </div>
@@ -4755,10 +4657,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729143226602-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729143226603" data-currenttid="20220729143226602-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729143226603" data-currenttid="20220729143226602-1">
 	<h2 class="">Return if app is still blank</h2><p>If nothing came back from the scanners, return so user can configure an app.</p><p><code>fly.toml</code> will just have the default stuff in it plus the name, org, and region, because </p>
     </div>
                             </div>
@@ -4776,10 +4676,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729143310667-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729143310668" data-currenttid="20220729143310667-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729143310668" data-currenttid="20220729143310667-1">
 	<h2 class="">Set up Postgres</h2><p>Only if not using <code>no-deploy</code> or <code>now</code> flags (I think because <code>--now</code> implies we don't want interactivity), and also not if the scanner has indicated we should skip database creation.</p>
     </div>
                             </div>
@@ -4844,10 +4742,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729143317034-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729143317035" data-currenttid="20220729143317034-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729143317035" data-currenttid="20220729143317034-1">
 	<p>The scanner can provide a message to show the user every time.</p>
     </div>
                             </div>
@@ -4866,10 +4762,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729143326850-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729143326851" data-currenttid="20220729143326850-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729143326851" data-currenttid="20220729143326850-1">
 	
     </div>
                             </div>
@@ -4888,10 +4782,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729143344354-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729143344356" data-currenttid="20220729143344354-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729143344356" data-currenttid="20220729143344354-1">
 	<p>Last message from the launcher itself regarding the deploy. Scanner can provide a specialized one.</p>
     </div>
                             </div>
@@ -4915,10 +4807,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729152840766-1">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729152840768" data-currenttid="20220729152840766-1">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729152840768" data-currenttid="20220729152840766-1">
 	<h2 class="">The function to run the init command</h2>
     </div>
                             </div>
@@ -4952,10 +4842,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220729152840766-2">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220729152840769" data-currenttid="20220729152840766-2">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220729152840769" data-currenttid="20220729152840766-2">
 	<h2 class="">The function to append things to the Dockerfile</h2>
     </div>
                             </div>
@@ -5007,10 +4895,8 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                     
                         <div class="omni-item-container" data-omnitid="20220728201857797-2">
-                            
-                            
                             <div class="omni-annot-display" tag="div">
-                                <div class="omni-annot-dblclick tc-tiddler-body" data-creatednum="20220728201857800" data-currenttid="20220728201857797-2">
+                                <div class="omni-annot-ro-dblclick tc-tiddler-body" data-creatednum="20220728201857800" data-currenttid="20220728201857797-2">
 	<h2 class="">The function to decide whether we want to deploy an app that already exists</h2><p>Checks for an existing app with a given name. If the app doesn't exist, OR there's an error getting its status, OR has any healthy deployed instances, <code>false</code>. If the app isn't deployed yet, OR none of the above conditions are met, <code>true</code>. </p>
     </div>
                             </div>
@@ -5046,7 +4932,6 @@ nav.tc-menubar .tc-drop-down .tc-menubar-dropdown-sidebar button {
                 
                                      
         </div>
-    </div></div>
 
             
         
